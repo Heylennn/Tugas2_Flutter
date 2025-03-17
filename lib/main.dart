@@ -17,8 +17,6 @@ class ToDoApp extends StatelessWidget {
 }
 
 class ToDoScreen extends StatefulWidget {
-  const ToDoScreen({super.key});
-
   @override
   _ToDoScreenState createState() => _ToDoScreenState();
 }
@@ -52,7 +50,7 @@ class _ToDoScreenState extends State<ToDoScreen> {
             padding: const EdgeInsets.all(8.0),
             child: TextField(
               controller: _controller,
-              decoration: InputDecoration(q
+              decoration: InputDecoration(
                 labelText: 'Enter Task',
                 suffixIcon: IconButton(
                   icon: Icon(Icons.add),
